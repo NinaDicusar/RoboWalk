@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robo Walk | Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <div id="gameMap">
+
+       <!---- <div class="robot"></div>-->
+       <!---- <div class="wrench"></div> -->
+
+
+</div>
+    <div class="control">
+    <button onclick="
+     if(robotRight * STEP < innerWidth   ){
+        robotRight--
+    }
+    console.log(robotRight)
+    render()
+        ">
+        ◀</button>
+    
+    
+    <button onclick="
+    if(robotLeft * STEP < innerWidth - STEP * 3 ){
+        robotLeft++
+    }
+    console.log(robotLeft)
+    render()
+    ">
+    ▶</button>
+</div> 
+<script src="game.js"></script>
+
+</body>
+</html>
